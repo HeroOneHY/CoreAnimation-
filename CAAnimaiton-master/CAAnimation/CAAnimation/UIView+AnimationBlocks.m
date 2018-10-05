@@ -63,8 +63,8 @@ static NSString *array = @"123";
         
     }
     
-    // 调用原始方法
-    return [self DR_actionForLayer:layer forKey:event]; // 没错，你没看错。因为它们已经被交换了
+    // 调用原始UIView的方法，因为它们已经被交换了
+    return [self DR_actionForLayer:layer forKey:event];
 }
 
 + (void)DR_popAnimationWithDuration:(NSTimeInterval)duration
